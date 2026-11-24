@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --lavanda-50: #FFFBFE;
+  --lavanda-100: #F5F0FF;
+  --lavanda-200: #E9D5FF;
+  --lavanda-300: #D8B4FE;
+  --lavanda-400: #C4A8FF;
+  --lavanda-500: #9C7ADE;
+  --lavanda-600: #5B3A96;
+  --lavanda-700: #4A2F7A;
+  --gold-400: #D4AF37;
+  --gold-500: #C9A86A;
+  --gold-600: #B8956A;
+  --surface: #FFFBFE;
+  --surface-2: #FFFFFF;
+  --text: #111111;
+  --text-muted: #111111;
+  --border: rgba(201, 168, 106, 0.45);
+  --shadow-soft: 0 8px 32px rgba(91, 58, 150, 0.12);
+  --shadow-gold: 0 4px 20px rgba(201, 168, 106, 0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --lavanda-50: #FFFBFE;
+    --lavanda-100: #F5F0FF;
+    --lavanda-200: #E9D5FF;
+    --surface: #FFFBFE;
+    --surface-2: #FFFFFF;
+    --text: #111111;
+    --text-muted: #111111;
+    --border: rgba(201, 168, 106, 0.45);
+  }
+}
+
+* { font-family: 'Poppins', sans-serif; }
+h1,h2,h3,.serif { font-family: 'Playfair Display', serif; }
+
+html { scroll-behavior: smooth; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: var(--lavanda-400); border-radius: 10px; }
